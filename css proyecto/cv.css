@@ -1,0 +1,868 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(59, 6, 59);
+    max-width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+ /**DISPOSITIVOS MÓVILES**/
+ @media (max-width: 950px) {
+ body{
+    background: pink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+ }
+ /**BARRA DE PROGRESO**/
+ 
+ #progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 8px;
+    background: linear-gradient(to right,rgb(235, 17, 137), rgb(10, 2, 17));
+    z-index: 1;
+    transition: .3s ease-out;
+ }
+ 
+ /**HEADER**/
+ 
+ header {
+    position: relative;
+    margin: 20px auto;
+    width: 500px;
+    height:48;
+ }
+ h1{
+    text-align: center;
+    font-family: 'Rubik Iso';
+    font-size: 50px;
+    margin: 20px auto;
+    margin-top: 55px;
+    border-radius: 100%;
+    line-height: 60px;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-nubes-coloridas-diseno-magico-estrellas_1017-25506.jpg?w=740&t=st=1680050104~exp=1680050704~hmac=1c3357225b987c8d9e206b067f1b440edac9b1aa77cd6a13523adf5ea668fb20);
+ }
+ .card {
+    position: relative;
+    margin:20px auto;
+    padding: 20px 0;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow:1px rgba(78, 3, 68, 0.5);
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px;
+    background-color: rgba(144, 62, 221, 0.288);
+ }
+ 
+ header img{
+    width: 180px;
+    height: 200px;
+    border-bottom-left-radius:50% ;
+    border:solid rebeccapurple;
+ }
+ /**FIN HEADER**/
+ /**BOTONES**/
+ nav{
+    position: relative;
+    margin:auto;
+    width: 950px;
+    height: 48px;
+    
+ }
+ .botones{
+    float: left;
+    width: 70px;
+    max-width: 950px ;
+    height: 70px;
+    margin: 20px 80px;
+    text-align: center;
+    border-radius: 20px;
+ }
+ .botones{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-nubes-coloridas-diseno-magico-estrellas_1017-25506.jpg?w=740&t=st=1680050104~exp=1680050704~hmac=1c3357225b987c8d9e206b067f1b440edac9b1aa77cd6a13523adf5ea668fb20);
+    background-size:cover;
+    box-shadow: 0 0 10px;
+ }
+ .botones img{
+    width:40px;
+    height:40px;
+    background: none;
+    margin-top: 10px;
+ }
+ a .botones:hover{
+    background:  rgba(255, 80, 240, 0.664);
+    color: crimson;
+ }
+ a .botones:active{
+    background-color: aqua;
+    color: darkblue;
+ }
+ /**FIN BOTONES**/
+ /**CUADRO**/
+ .caja-top{
+    position: relative;
+    margin:200px auto;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 300px;
+    background-color:rgba(221, 160, 221, 0.719);
+    text-align: center;
+ }
+ .caja-top h2{
+    margin: 10px;
+    text-decoration-line: overline;
+    font-family:'Rubik Iso' ;
+    font-size: small;
+ }
+ .caja-top h4{
+    text-decoration-line:underline;
+    font-family:'Courier New', Courier, monospace;
+    font-size:small;
+ }
+ .caja-top iframe{
+     width: 150px;
+ }
+ /**izquierdo**/
+ aside#izquierda{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height:300px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/723/534/non_2x/abstract-paint-pastel-purple-background-free-vector.jpg);
+    box-shadow: 0 0 20px;
+ }
+ aside#izquierda h4{
+    margin-top:27px ;
+     text-align: center;
+    
+ }
+ 
+ .redes-container{
+    display:inline;
+    height:20vh;
+    align-items: center;
+    justify-content: center;
+ }
+ .redes-container ul li{
+    display: inline-block;
+    margin: 15px 20px;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+ }
+ .redes-container ul li a{
+    display: block;
+    background: rgb(174, 112, 216);
+    line-height: 50px;
+    font-size: 20px;
+    box-shadow: 0 3px 5px 0;
+    transition: .2s;
+ }
+ .redes-container ul:hover a{
+    filter: blur(2px);
+ }
+ .redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0;
+    filter: none;
+ }
+ .redes-container ul li .facebook:hover{
+    background: blue;
+ }
+ .redes-container ul li .instagram:hover{
+    background: magenta;
+ }
+ .redes-container ul li .twitter:hover{
+    background: lightblue;
+ }
+ .redes-container ul li .pinterest:hover{
+    background: red;
+ }
+ .redes-container ul li .linkedln:hover{
+    background: darkblue;
+ }
+ 
+ /**derecho**/
+ aside#derecha{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 300px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/723/534/non_2x/abstract-paint-pastel-purple-background-free-vector.jpg);
+    box-shadow: 0 0 20px;
+    z-index: 0;
+ }
+ 
+ .formulario{
+    padding: 20px;
+    text-align: left;
+ }
+ aside#derecha h4{
+    text-align: center;
+   margin-top: 5px;
+ }
+ .formulario_input, .formulario_label, .formulario_submit {
+    display: block;
+    width: 97%;
+    font-size: small;
+ }
+ .formulario_input{
+    padding:10px;
+    background: transparent;
+    border: 1px solid purple;
+    margin-bottom: 40px;
+ }
+ .formulario_input:focus + .formulario_label{
+  margin-top: -30px; 
+ }
+ .formulario_label{
+    padding-left: 10px;
+    position: absolute;
+    margin-top: -65px;
+    z-index: -5;
+    transition: all 0.2s;
+ }
+ .formulario_submit{
+    border-color: darkblue;
+    border-radius: 20%;
+    background-color: lightblue;
+    color:black;
+    font-size: medium;
+ }
+ .formulario_submit:focus-visible{
+    background-color: brown;
+ }
+ .formulario_submit:active{
+    background-color: blueviolet;
+ }
+ /**java formulario**/
+ .fijar {
+    margin-top: -30px;
+ }
+ /**CAJA TOP**/
+ main{
+    display: flex;
+    position: relative;
+    width:300px;
+    max-width: 500px;
+ }
+ #menu{
+    text-align: center;
+ }
+ 
+ .top{
+    width: 100%;
+    justify-content: center;
+ }
+ #caja{
+    width:140px;
+    height: 250px;
+    margin:10px;
+    padding:20px;
+    border: 2px solid greenyellow;
+    border-radius: 14px;
+    background-color: cornflowerblue;
+    text-align: center;
+   position: relative;
+ }
+ #caja img{
+    width:60%;
+ }
+ #caja h2{
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(55, 21, 99);
+ }
+ #caja .caja-p{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    border-radius: 0  0 14px 14px;
+    opacity: 1;
+ }
+ #caja p{
+    font-size: 14px;
+    color:rgb(109, 32, 160) ;
+    text-align: center;
+ }
+ #caja .tilde{
+    position:absolute;
+    bottom:20px;
+    left: 50%;
+    border: 2px solid plum;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color:darkcyan;
+ }
+ #caja .tilde i{
+    margin-top: 6px;
+ }
+ 
+ 
+ /**CIERRA TOP**/
+ 
+ /**PIE DE PAGINA**/
+ footer{
+    position:relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 150px;
+    background: linear-gradient(to right, plum, lightblue);
+    text-align: center;
+    line-height: 48px;
+ }
+ footer h4{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin: 20px auto;
+    border-radius: 100%;
+    line-height: 60px;
+    padding: 10px;
+ }
+ 
+ /**PACMAN**/
+ section#pac{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 20vh;
+     background: transparent;
+ }
+ .container {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 30vh;
+    width: 50%;
+ }
+ .path {
+    display: flex;
+    justify-content: space-around;
+    animation: eating-path 0.5s linear infinite;
+    width: 100%;
+ }
+ .path::before{
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+ }
+ @keyframes eating-path {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+ }
+ .pacman {
+    position: relative;
+    background: transparent;
+    z-index: 1;
+ }
+    .pacman::before, .pacman::after {
+        position: absolute;
+        top: -35px;
+        display: block;
+        border-radius: 50%;
+        content: "";
+        height: 0px;
+        width: 0px;
+    }
+ 
+    .pacman::before {
+        animation: chunk-top 0.5s ease infinite;
+        border: 35px solid #FFCC00;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+    @keyframes chunk-top {
+        0%,100% {
+            transform: rotate(-45deg);
+        }
+        50% {
+            transform: rotate(-80deg);
+        }
+    }
+ 
+    .pacman::after {
+        animation: chunk-bottom 0.5s ease infinite;
+        border: 35px solid #FFCC00;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }
+ 
+ @keyframes chunk-bottom {
+    0%,
+    100% {
+        transform: rotate(-40deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+ }
+ }
+ /**SITIO DE ESCRITORIO**/
+ @media (min-width: 950px) {
+ body{
+    background-image: url(https://img.freepik.com/fotos-premium/arco-iris-pastel-ombre-papel-digital-acuarela-degradado-fondo-acuarela_199112-210.jpg?w=360);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+ }
+ /**BARRA DE PROGRESO**/
+ 
+ #progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 15px;
+    background: linear-gradient(to right,violet, blueviolet);
+    z-index: 1;
+    transition: .3s ease-out;
+ }
+ 
+ /**HEADER**/
+ 
+ header {
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height:48;
+ }
+ h1{
+    text-align: center;
+    font-family: 'Rubik Iso';
+    font-size: 50px;
+    margin: 20px auto;
+    margin-top: 55px;
+    border-radius: 100%;
+    line-height: 60px;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-nubes-coloridas-diseno-magico-estrellas_1017-25506.jpg?w=740&t=st=1680050104~exp=1680050704~hmac=1c3357225b987c8d9e206b067f1b440edac9b1aa77cd6a13523adf5ea668fb20);
+ }
+ .card {
+    position: relative;
+    margin:20px auto;
+    padding: 20px 0;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow:1px rgba(78, 3, 68, 0.5);
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px;
+    background-color: rgba(144, 62, 221, 0.288);
+ }
+ 
+ header img{
+    width: 180px;
+    height: 200px;
+    border-bottom-left-radius:50% ;
+    border:solid rebeccapurple;
+ }
+ /**FIN HEADER**/
+ /**BOTONES**/
+ nav{
+    position: relative;
+    margin:auto;
+    width: 1000px;
+    height: 48px;
+ }
+ .botones{
+ 
+    float: left;
+    width: 70px;
+    max-width: 1000px ;
+    height: 70px;
+    margin: 10px 90px;
+    text-align: center;
+    border-radius: 20px;
+ }
+ .botones{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-nubes-coloridas-diseno-magico-estrellas_1017-25506.jpg?w=740&t=st=1680050104~exp=1680050704~hmac=1c3357225b987c8d9e206b067f1b440edac9b1aa77cd6a13523adf5ea668fb20);
+    background-size:cover;
+    box-shadow: 0 0 10px;
+ }
+ .botones img{
+    width:40px;
+    height:40px;
+    background: none;
+    margin-top: 10px;
+ }
+ a .botones:hover{
+    background:  rgba(255, 80, 240, 0.664);
+    color: crimson;
+ }
+ a .botones:active{
+    background-color: aqua;
+    color: darkblue;
+ }
+ /**FIN BOTONES**/
+ /**CUADRO**/
+ .caja-top{
+    position: relative;
+    margin:100px auto;
+    width: 1200px;
+    height: 453px;
+    background-color:rgba(221, 160, 221, 0.719);
+    text-align: center;
+ }
+ .caja-top h2{
+    margin: 30px;
+    text-decoration-line: overline;
+    font-family:'Rubik Iso' ;
+    font-size: Xx-large;
+ }
+ .caja-top h4{
+    margin: 50px;
+    text-decoration-line:underline;
+    font-family:'Courier New', Courier, monospace;
+    font-size:x-large;
+ }
+ .caja-top iframe{
+    width:560px;
+    height:315px;
+ }
+ /**izquierdo**/
+ aside#izquierda{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 453px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/723/534/non_2x/abstract-paint-pastel-purple-background-free-vector.jpg);
+    box-shadow: 0 0 20px;
+ }
+ aside#izquierda h4{
+     text-align: center;
+     margin: 48px auto;
+ }
+ 
+ .redes-container{
+    display:flex;
+    height:30vh;
+    align-items: center;
+    justify-content: center;
+ }
+ .redes-container ul li{
+    display: inline-block;
+    margin: 15px 20px;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+ }
+ .redes-container ul li a{
+    display: block;
+    padding: 5px 20px;
+    background: rgb(174, 112, 216);
+    line-height: 50px;
+    font-size: 20px;
+    box-shadow: 0 3px 5px 0;
+    transition: .2s;
+ }
+ .redes-container ul:hover a{
+    filter: blur(2px);
+ }
+ .redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0;
+    filter: none;
+ }
+ .redes-container ul li .facebook:hover{
+    background: blue;
+ }
+ .redes-container ul li .instagram:hover{
+    background: magenta;
+ }
+ .redes-container ul li .twitter:hover{
+    background: lightblue;
+ }
+ .redes-container ul li .pinterest:hover{
+    background: red;
+ }
+ .redes-container ul li .linkedln:hover{
+    background: darkblue;
+ }
+ 
+ /**derecho**/
+ aside#derecha{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 453px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/723/534/non_2x/abstract-paint-pastel-purple-background-free-vector.jpg);
+    box-shadow: 0 0 20px;
+    z-index: 0;
+ }
+ 
+ .formulario{
+    margin: 20px auto;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+ }
+ aside#derecha h4{
+    text-align: center;
+    margin: 10px;
+ }
+ .formulario_input, .formulario_label, .formulario_submit {
+    display: block;
+    width: 97%;
+    font-size: small;
+ }
+ .formulario_input{
+    padding:10px;
+    background: transparent;
+    border: 1px solid purple;
+    margin-bottom: 40px;
+ }
+ .formulario_input:focus + .formulario_label{
+  margin-top: -30px; 
+ }
+ .formulario_label{
+    padding-left: 10px;
+    position: absolute;
+    margin-top: -65px;
+    z-index: -5;
+    transition: all 0.2s;
+ }
+ .formulario_submit{
+    border-color: darkblue;
+    border-radius: 20%;
+    background-color: lightblue;
+    color:black;
+    padding: 10px 20px;
+    font-size: medium;
+ }
+ .formulario_submit:focus-visible{
+    background-color: brown;
+ }
+ .formulario_submit:active{
+    background-color: blueviolet;
+ }
+ /**java formulario**/
+ .fijar {
+    margin-top: -30px;
+ }
+ /**CAJA TOP**/
+ main{
+    width:100%;
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: auto 2px auto;
+ }
+ #menu{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 70px;
+    text-align: center;
+    background-color: plum;
+ }
+ .top{
+    justify-items: left;
+ }
+ .line{
+   background-color:rgba(155, 54, 206, 0.445);
+ }
+ .line::before, .line::after{
+    content:"";
+    display:block;
+    width: 20px;
+    height: 20px;
+    background-color:rgba(155, 54, 206, 0.445) ;
+    border-radius: 50%;
+    position: absolute;
+ }
+ #caja{
+    width:186px;
+    height: 200px;
+    margin:10px;
+    padding:20px;
+    border: 2px solid greenyellow;
+    border-radius: 14px;
+    background-color: cornflowerblue;
+    text-align: center;
+    position: relative;
+ }
+ #caja img{
+    width:60%;
+    transition: all 400ms;
+    scroll-margin-top: 80px;
+ }
+  
+ }
+ #caja h2{
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(55, 21, 99);
+    transition: all 500ms;
+ }
+ #caja #caja-p{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    border-radius: 0  0 14px 14px;
+ }
+ #caja p{
+ 
+    font-size: 14px;
+    color:rgb(109, 32, 160) ;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 600ms;
+    text-align: center;
+ }
+ #caja .tilde{
+    position:absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid plum;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color:darkcyan;
+ }
+ #caja .tilde i{
+    margin-top: 6px;
+ }
+ #caja:hover{
+    background: cadetblue;
+ }
+ #caja:hover img{
+ transform: translateY(-90px);
+ }
+ #caja:hover h2{
+    transform: translateY(-90px);
+ }
+ 
+ #caja:hover p{
+    transform: translateY(-80px);
+    opacity: 1;
+ }
+ 
+ /**CIERRA TOP**/
+ 
+ /**PIE DE PAGINA**/
+ footer{
+    position:relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 90px;
+    background: linear-gradient(to right, plum, lightblue);
+    text-align: center;
+    line-height: 48px;
+ }
+ footer h4{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin: 20px auto;
+    border-radius: 100%;
+    line-height: 60px;
+    padding: 10px;
+ }
+ 
+ /**PACMAN**/
+ section#pac{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 20vh;
+     background: transparent;
+ }
+ .container {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 30vh;
+    width: 50%;
+ }
+ .path {
+    display: flex;
+    justify-content: space-around;
+    animation: eating-path 0.5s linear infinite;
+    width: 100%;
+ }
+ .path::before{
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+ }
+ @keyframes eating-path {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+ }
+ .pacman {
+    position: relative;
+    background: transparent;
+    z-index: 1;
+ }
+    .pacman::before, .pacman::after {
+        position: absolute;
+        top: -35px;
+        display: block;
+        border-radius: 50%;
+        content: "";
+        height: 0px;
+        width: 0px;
+    }
+ 
+    .pacman::before {
+        animation: chunk-top 0.5s ease infinite;
+        border: 35px solid #FFCC00;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+    @keyframes chunk-top {
+        0%,100% {
+            transform: rotate(-45deg);
+        }
+        50% {
+            transform: rotate(-80deg);
+        }
+    }
+ 
+    .pacman::after {
+        animation: chunk-bottom 0.5s ease infinite;
+        border: 35px solid #FFCC00;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }
+ 
+ @keyframes chunk-bottom {
+    0%,
+    100% {
+        transform: rotate(-40deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+ }
+ 
